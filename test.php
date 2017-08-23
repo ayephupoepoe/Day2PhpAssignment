@@ -1,8 +1,20 @@
 <?php
-$name = array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40") ;
-echo asort($name);
-echo ksort($name);
-echo arsort($name);
-echo krsort($name);
+$ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg",
+"Belgium"=> "Brussels", "Denmark"=>"Copenhagen",
+"Finland"=>"Helsinki", "France" => "Paris",
+"Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana",
+"Germany" => "Berlin", "Greece" => "Athens",
+"Ireland"=>"Dublin", "Netherlands"=>"Amsterdam",
+"Portugal"=>"Lisbon", "Spain"=>"Madrid",
+"Sweden"=>"Stockholm", "United Kingdom"=>"London",
+"Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius",
+"Czech Republic"=>"Prague", "Estonia"=>"Tallin",
+"Hungary"=>"Budapest", "Latvia"=>"Riga","Malta"=>"Valetta",
+"Austria" => "Vienna", "Poland"=>"Warsaw") ;
 
-?>
+asort($ceu) ;
+foreach($ceu as $country => $capital)
+{
+echo nl2br("The capital of $country is $capital \n") ;
+}
+?>>
