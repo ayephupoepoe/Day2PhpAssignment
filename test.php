@@ -1,13 +1,19 @@
 <?php
-$original = array( '1','2','3','4','5' );
-echo 'Original array : '."\n";
-foreach ($original as $x) 
-{echo "$x ";}
-$inserted = '$';
-array_splice( $original, 3, , $inserted ); 
-echo " \n After inserting '$' the array is : "."\n";
-foreach ($original as $x) 
-{echo "$x ";}
-echo "\n"
-
+$ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg",
+"Belgium"=> "Brussels", "Denmark"=>"Copenhagen",
+"Finland"=>"Helsinki", "France" => "Paris",
+"Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana",
+"Germany" => "Berlin", "Greece" => "Athens",
+"Ireland"=>"Dublin", "Netherlands"=>"Amsterdam",
+"Portugal"=>"Lisbon", "Spain"=>"Madrid",
+"Sweden"=>"Stockholm", "United Kingdom"=>"London",
+"Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius",
+"Czech Republic"=>"Prague", "Estonia"=>"Tallin",
+"Hungary"=>"Budapest", "Latvia"=>"Riga","Malta"=>"Valetta",
+"Austria" => "Vienna", "Poland"=>"Warsaw") ;
+asort($ceu) ;
+foreach($ceu as $country => $capital)
+{
+echo nl2br("The capital of $country is $capital \n") ;
+}
 ?>
