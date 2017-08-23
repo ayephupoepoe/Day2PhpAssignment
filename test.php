@@ -1,8 +1,13 @@
 <?php
-$name = array("Sophia"=>"31","Jacob"=>"41","William"=>"39","Ramesh"=>"40") ;
-echo asort($name);
-echo ksort($name);
-echo arsort($name);
-echo krsort($name);
+$original = array( '1','2','3','4','5' );
+echo 'Original array : '."\n";
+foreach ($original as $x) 
+{echo "$x ";}
+$inserted = '$';
+array_splice( $original, 3, , $inserted ); 
+echo " \n After inserting '$' the array is : "."\n";
+foreach ($original as $x) 
+{echo "$x ";}
+echo "\n"
 
 ?>
