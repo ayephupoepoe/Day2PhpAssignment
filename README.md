@@ -1,3 +1,2 @@
 # Day2PhpAssignment
-Tehdb
-fhdhfjgrogol
+Tehd
